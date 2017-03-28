@@ -7,19 +7,25 @@ using Libs.Util;
 
 namespace Libs.Domain
 {
-    public interface IEntityIdentifier<IEntity> : IValueObject
+    public interface IEntityIdentifier<T> : IValueObject
     {
-        String GetKind();
+        string GetKind();
         Guid ToGUID();
     }
 
-    public sealed class DefaultEntityIdentifier<IEntity> : IEntityIdentifier<IEntity>
+    public sealed class DefaultEntityIdentifier<T> : IEntityIdentifier<T>
     {
 
-        private String kind;
+        private string kind;
         private Guid guid;
 
-        public DefaultEntityIdentifier(Type t, Guid guid) : this(t.Name, guid) {  
+        public static DefaultEntityIdentifier<T> CreateNewInstance()
+        {
+            return new DefaultEntityIdentifier<T>(typeof(T), Guid.NewGuid());
+        }
+
+        public DefaultEntityIdentifier(Type t, Guid guid) : this(t.FullName, guid)
+        {  
         }
 
         public DefaultEntityIdentifier(string kind, Guid guid)
@@ -52,11 +58,11 @@ namespace Libs.Domain
             {
                 return true;
             }
-            if (o == null || o is DefaultEntityIdentifier<IEntity>) {
+            if (o == null || o is DefaultEntityIdentifier<T>) {
                 return false;
             }
 
-            DefaultEntityIdentifier<IEntity> that = (DefaultEntityIdentifier<IEntity>) o;
+            DefaultEntityIdentifier<T> that = (DefaultEntityIdentifier<T>) o;
             if (kind.Equals(that.kind) == false)
             {
                 return false;

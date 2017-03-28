@@ -11,8 +11,10 @@ namespace TodoApp.Test
         [TestMethod]
         public void CreateObject()
         {
-            TodoModel todo = new TodoModel(new DefaultEntityIdentifier<TodoModel>( typeof(TodoModel), Guid.NewGuid()));
-            int aa = todo.GetHashCode();
+            TodoModel todoA = new TodoModel(DefaultEntityIdentifier<TodoModel>.CreateNewInstance(), "");
+            TodoModel todoB = new TodoModel(DefaultEntityIdentifier<TodoModel>.CreateNewInstance(), "");
+            Assert.AreEqual(todoA, todoA.Clone());
+            Assert.AreNotEqual(todoA, todoB);
             //int a = 0;
         }
     }

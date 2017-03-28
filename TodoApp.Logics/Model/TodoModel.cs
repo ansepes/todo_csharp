@@ -9,9 +9,28 @@ namespace TodoApp.Logics.Model
 {
     public class TodoModel : AbstractEntity<TodoModel>
     {
-        public TodoModel(IEntityIdentifier<TodoModel> identifier) : base(identifier)
+        string message = "";
+        bool finished;
+
+        public TodoModel(IEntityIdentifier<TodoModel> identifier, string message) : base(identifier)
         {
-            
+            this.message = message;
+            this.finished = false;
+        }
+
+        public string GetMessage()
+        {
+            return message;
+        }
+
+        public bool Finished()
+        {
+            return finished;
+        }
+
+        public void ToggleState()
+        {
+            finished = !finished;
         }
     }
 
