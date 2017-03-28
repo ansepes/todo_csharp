@@ -1,3 +1,8 @@
-/Todo/bin
-/Todo/obj
-/Todo/Todo.csproj.user
+/TodoApp/bin/
+/TodoApp/obj/
+/TodoApp/Todo.csproj.user
+/TestResults/
+/TodoApp.Logics/bin/
+/TodoApp.Logics/obj/
+/TodoApp.Test/bin/
+/TodoApp.Test/obj/
