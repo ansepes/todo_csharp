@@ -15,7 +15,6 @@ namespace TodoApp.Test
             TodoModel todoB = new TodoModel(DefaultEntityIdentifier<TodoModel>.CreateNewInstance(), "");
             Assert.AreEqual(todoA, todoA.Clone());
             Assert.AreNotEqual(todoA, todoB);
-            //int a = 0;
         }
     }
 }

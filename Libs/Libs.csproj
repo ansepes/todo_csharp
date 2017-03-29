@@ -43,6 +43,7 @@
     <Compile Include="Class1.cs" />
     <Compile Include="Domain\IEntityIdentifier.cs" />
     <Compile Include="Domain\IEntity.cs" />
+    <Compile Include="Domain\IEntityList.cs" />
     <Compile Include="Domain\IRepository.cs" />
     <Compile Include="Domain\IValueObject.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -7,8 +7,15 @@ using Libs.Domain;
 
 namespace TodoApp.Domains.Model
 {
-    class TodoList : AbstractEntityList<TodoModel>
+    class TodoList : List<TodoModel>
     {
+        public TodoList Clone()
+        {
+            TodoList newList = new TodoList();
 
+            this.ForEach((todo) => todo.Clone());
+
+            return newList;
+        }
     }
 }
