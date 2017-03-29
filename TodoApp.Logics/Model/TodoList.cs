@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Libs.Domain;
 
-namespace TodoApp.Logics.Model
+namespace TodoApp.Domains.Model
 {
-    class TodoList :List<TodoModel> 
+    class TodoList : AbstractEntityList<TodoModel>
     {
 
     }

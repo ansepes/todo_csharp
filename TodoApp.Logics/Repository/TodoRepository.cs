@@ -4,45 +4,48 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Libs.Domain;
-using TodoApp.Logics.Model;
+using TodoApp.Domains.Model;
 
-namespace TodoApp.Logics.Repository
+namespace TodoApp.Domains.Repository
 {
-    class TodoRepository : IRepository<TodoModel>
+    class TodoRepository : IRepository<TodoModel, TodoList>
     {
-        public List<TodoModel> asEntitiesList()
+
+        private TodoList todos = new TodoList();
+
+        public TodoList AsEntitiesList()
         {
-            throw new NotImplementedException();
+            return todos.Clone();
         }
 
-        public bool contains(TodoModel entity)
+        public bool Contains(TodoModel entity)
         {
-            throw new NotImplementedException();
+            return todos.Exists((todo) => todo.Equals(entity));
         }
 
-        public bool contains(IEntityIdentifier<TodoModel> identifier)
+        public bool Contains(IEntityIdentifier<TodoModel> identifier)
         {
-            throw new NotImplementedException();
+            return todos.Exists((todo) => todo.GetIdentifier().Equals(identifier));
         }
 
-        public void delete(TodoModel entity)
+        public void Delete(TodoModel entity)
         {
-            throw new NotImplementedException();
+            todos.Remove(entity);
         }
 
-        public void delete(IEntityIdentifier<TodoModel> identifier)
+        public void Delete(IEntityIdentifier<TodoModel> identifier)
         {
-            throw new NotImplementedException();
+            Delete(Resolve(identifier));
         }
 
-        public TodoModel resolve(IEntityIdentifier<TodoModel> identifier)
+        public TodoModel Resolve(IEntityIdentifier<TodoModel> identifier)
         {
-            throw new NotImplementedException();
+            return todos.Find((todo) => todo.GetIdentifier().Equals(identifier));
         }
 
-        public void store(TodoModel entity)
+        public void Store(TodoModel entity)
         {
-            throw new NotImplementedException();
+            todos.Add(entity);
         }
     }
 }

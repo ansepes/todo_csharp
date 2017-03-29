@@ -6,21 +6,21 @@ using System.Threading.Tasks;
 
 namespace Libs.Domain
 {
-    public interface IRepository<IEntity>
+    public interface IRepository<T, L>
     {
-        IEntity resolve(IEntityIdentifier<IEntity> identifier);
+        T Resolve(IEntityIdentifier<T> identifier);
 
-        List<IEntity> asEntitiesList();
+        L AsEntitiesList();
 
-        bool contains(IEntityIdentifier<IEntity> identifier);
+        bool Contains(IEntityIdentifier<T> identifier);
 
-        bool contains(IEntity entity);
+        bool Contains(T entity);
 
-        void store(IEntity entity);
+        void Store(T entity);
 
-        void delete(IEntityIdentifier<IEntity> identifier);
+        void Delete(IEntityIdentifier<T> identifier);
 
-        void delete(IEntity entity);
+        void Delete(T entity);
 
 
 
