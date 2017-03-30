@@ -5,7 +5,7 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoApp", "TodoApp\TodoApp.csproj", "{5D7EA485-438A-4B11-A039-B1B31D4428A1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoApp.Domains", "TodoApp.Logics\TodoApp.Domains.csproj", "{C35CAF23-A863-4319-A222-6B1296F155C9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoApp.Domains", "TodoApp.Domains\TodoApp.Domains.csproj", "{C35CAF23-A863-4319-A222-6B1296F155C9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoApp.Test", "TodoApp.Test\TodoApp.Test.csproj", "{8976296E-CF2F-4DCB-847D-68B18BDB08A4}"
 EndProject

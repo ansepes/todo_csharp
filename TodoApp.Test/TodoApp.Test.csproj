@@ -58,7 +58,7 @@
       <Project>{d4eeaa68-3696-4887-9fd2-9748a71040ea}</Project>
       <Name>Libs</Name>
     </ProjectReference>
-    <ProjectReference Include="..\TodoApp.Logics\TodoApp.Domains.csproj">
+    <ProjectReference Include="..\TodoApp.Domains\TodoApp.Domains.csproj">
       <Project>{c35caf23-a863-4319-a222-6b1296f155c9}</Project>
       <Name>TodoApp.Domains</Name>
     </ProjectReference>

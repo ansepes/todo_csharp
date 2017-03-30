@@ -2,7 +2,7 @@
 /TodoApp/obj/
 /TodoApp/Todo.csproj.user
 /TestResults/
-/TodoApp.Logics/bin/
-/TodoApp.Logics/obj/
+/TodoApp.Domains/bin/
+/TodoApp.Domains/obj/
 /TodoApp.Test/bin/
 /TodoApp.Test/obj/

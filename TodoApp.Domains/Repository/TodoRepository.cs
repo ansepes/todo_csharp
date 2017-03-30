@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Libs.Domain;
-using TodoApp.Domains.Model;
+using TodoApp.Domains.Entity;
 
 namespace TodoApp.Domains.Repository
 {
@@ -20,7 +20,7 @@ namespace TodoApp.Domains.Repository
 
         public bool Contains(TodoModel entity)
         {
-            return todos.Exists((todo) => todo.Equals(entity));
+            return Contains(entity.GetIdentifier());
         }
 
         public bool Contains(IEntityIdentifier<TodoModel> identifier)

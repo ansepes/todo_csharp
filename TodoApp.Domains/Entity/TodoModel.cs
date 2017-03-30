@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Libs.Domain;
 
-namespace TodoApp.Domains.Model
+namespace TodoApp.Domains.Entity
 {
     public class TodoModel : AbstractEntity<TodoModel>
     {

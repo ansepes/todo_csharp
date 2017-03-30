@@ -1,6 +1,6 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using TodoApp.Domains.Model;
+using TodoApp.Domains.Entity;
 using Libs.Domain;
 
 namespace TodoApp.Test
