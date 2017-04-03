@@ -7,7 +7,7 @@ using Libs.Domain;
 
 namespace TodoApp.Domains.Entity
 {
-    class TodoList : List<TodoModel>
+    public class TodoList : List<TodoModel>
     {
         public TodoList Clone()
         {

@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoApp.Test", "TodoApp.Tes
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Libs", "Libs\Libs.csproj", "{D4EEAA68-3696-4887-9FD2-9748A71040EA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoApp.Apps", "TodoApp.Services\TodoApp.Apps.csproj", "{30B54967-1DCC-4C5B-811D-ECE7D30F99FA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoApp.Apps", "TodoApp.Apps\TodoApp.Apps.csproj", "{30B54967-1DCC-4C5B-811D-ECE7D30F99FA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoApp.Infrastructures", "TodoApp.Infrastructures\TodoApp.Infrastructures.csproj", "{CE62085A-7DB2-4148-BEF1-30BAC99B3E17}"
 EndProject

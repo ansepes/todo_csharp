@@ -18,7 +18,7 @@ namespace TodoApp.Domains.Entity
             this.finished = false;
         }
 
-        public string GetMessage()
+        public string Message()
         {
             return message;
         }

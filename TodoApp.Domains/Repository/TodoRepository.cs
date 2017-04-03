@@ -8,7 +8,7 @@ using TodoApp.Domains.Entity;
 
 namespace TodoApp.Domains.Repository
 {
-    class TodoRepository : IRepository<TodoModel, TodoList>
+    public class TodoRepository : IRepository<TodoModel, TodoList>
     {
 
         private TodoList todos = new TodoList();
