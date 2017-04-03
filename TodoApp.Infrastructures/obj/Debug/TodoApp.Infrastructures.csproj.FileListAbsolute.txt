@@ -1,0 +1,5 @@
+K:\Projects\VB\Todo\TodoApp.Infrastructures\bin\Debug\TodoApp.Infrastructures.dll
+K:\Projects\VB\Todo\TodoApp.Infrastructures\bin\Debug\TodoApp.Infrastructures.pdb
+K:\Projects\VB\Todo\TodoApp.Infrastructures\obj\Debug\TodoApp.Infrastructures.csprojResolveAssemblyReference.cache
+K:\Projects\VB\Todo\TodoApp.Infrastructures\obj\Debug\TodoApp.Infrastructures.dll
+K:\Projects\VB\Todo\TodoApp.Infrastructures\obj\Debug\TodoApp.Infrastructures.pdb

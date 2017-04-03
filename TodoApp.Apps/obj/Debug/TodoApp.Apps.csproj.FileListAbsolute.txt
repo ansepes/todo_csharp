@@ -1,0 +1,9 @@
+K:\Projects\VB\Todo\TodoApp.Apps\bin\Debug\TodoApp.Apps.dll
+K:\Projects\VB\Todo\TodoApp.Apps\bin\Debug\TodoApp.Apps.pdb
+K:\Projects\VB\Todo\TodoApp.Apps\bin\Debug\Libs.dll
+K:\Projects\VB\Todo\TodoApp.Apps\bin\Debug\TodoApp.Domains.dll
+K:\Projects\VB\Todo\TodoApp.Apps\bin\Debug\Libs.pdb
+K:\Projects\VB\Todo\TodoApp.Apps\bin\Debug\TodoApp.Domains.pdb
+K:\Projects\VB\Todo\TodoApp.Apps\obj\Debug\TodoApp.Apps.csprojResolveAssemblyReference.cache
+K:\Projects\VB\Todo\TodoApp.Apps\obj\Debug\TodoApp.Apps.dll
+K:\Projects\VB\Todo\TodoApp.Apps\obj\Debug\TodoApp.Apps.pdb

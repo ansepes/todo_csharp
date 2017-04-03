@@ -9,7 +9,7 @@ using TodoApp.Domains.Repository;
 
 namespace TodoApp.Apps.Service
 {
-    interface ITodoService
+    public interface ITodoService
     {
         TodoList GetAll();
 

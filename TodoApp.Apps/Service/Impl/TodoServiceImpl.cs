@@ -10,7 +10,7 @@ using TodoApp.Domains.Repository;
 
 namespace TodoApp.Apps.Service.Impl
 {
-    class TodoServiceImpl : ITodoService
+    public class TodoServiceImpl : ITodoService
     {
         private TodoRepository repository = new TodoRepository();
 
