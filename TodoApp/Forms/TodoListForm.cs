@@ -106,7 +106,7 @@ namespace TodoApp.Forms
 
         #endregion
 
-        #region "  "
+        #region " 追加 "
         private void AddButton_Click(object sender, EventArgs e)
         {
             AddTodo();

@@ -7,17 +7,18 @@ using System.Text;
 using System.Threading.Tasks;
 using TodoApp.Domains.Entity;
 using TodoApp.Domains.Repository;
+using TodoApp.Domains.Factory;
 
 namespace TodoApp.Apps.Service.Impl
 {
     public class TodoServiceImpl : ITodoService
     {
         private TodoRepository repository = new TodoRepository();
+        private TodoFactory factory = new TodoFactory();
 
-
-        public TodoModel Create(string message)
+        public TodoModel Create(string title)
         {
-            return new TodoModel(DefaultEntityIdentifier<TodoModel>.CreateNewInstance(), message);
+            return factory.Create(title);
         }
 
         public void Delete(TodoModel todo)

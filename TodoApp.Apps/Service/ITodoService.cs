@@ -13,7 +13,7 @@ namespace TodoApp.Apps.Service
     {
         TodoList GetAll();
 
-        TodoModel Create(string message);
+        TodoModel Create(string title);
 
         void Store(TodoModel todo);
 

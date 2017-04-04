@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="Entity\TodoList.cs" />
     <Compile Include="Entity\TodoModel.cs" />
+    <Compile Include="Factory\TodoFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository\TodoRepository.cs" />
   </ItemGroup>

@@ -43,9 +43,30 @@ namespace TodoApp.Domains.Repository
             return todos.Find((todo) => todo.GetIdentifier().Equals(identifier));
         }
 
+        private bool Exists(IEntityIdentifier<TodoModel> identifier)
+        {
+            TodoModel todo = Resolve(identifier);
+            return todo == null;
+        }
+
         public void Store(TodoModel entity)
         {
-            todos.Add(entity);
+            if (! Exists(entity.GetIdentifier()))
+            {
+                todos.Add(entity);
+                return;
+            }
+
+            Update(entity);
+
+        }
+
+        private void Update(TodoModel entity)
+        {
+            int idx = this.todos.IndexOf(entity);
+            if (idx < 0) return;
+
+            todos[idx] = entity;
         }
     }
 }
